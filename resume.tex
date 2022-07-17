@@ -1,0 +1,192 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[top=0.75in, bottom=0.2in, left=0.35in, right=0.35in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{enumitem}
+\usepackage{palatino}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+\fontfamily{SansSerif}
+\selectfont
+
+\usepackage[T1]{fontenc}
+\usepackage
+%[ansinew]
+[utf8]
+{inputenc}
+
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.82}
+\textheight=9.75in
+\raggedbottom
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+
+\pagestyle{empty}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.99\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+% Blank white space for the header to be added by placement team
+%   \hspace{0.1em}\\ % also use up a newline
+%   \vspace{2.7cm}\\ % the remaining free space.
+
+% Dummy header is written here, just for example  in between the tags:  \iffalse and \fi .. 
+% \iffalse 
+\begin{table}
+    \begin{minipage}{0.15\linewidth}
+        \centering
+        \includegraphics[height =0.8in]{nsut.eps}
+    \end{minipage}
+    \begin{minipage}{0.65\linewidth}
+        \centering
+        \setlength{\tabcolsep}{70pt}
+        \def\arraystretch{1.15}
+        \begin{tabular}{cc}
+            \textbf{\centering\huge{Shivam Modi}}\\
+            \textbf{\href{www.xyz.vwx}{Address} | \href{mailto:random@random.com}{random@gmail.com} | 9XXXXXXXXX \vspace{3 mm}}\\
+            \textbf{Leetcode | HackerRank | Github | LinkedIn}
+        \end{tabular}
+    \end{minipage}\hfill
+\end{table}    
+
+\setlength{\tabcolsep}{25pt}
+\begin{table}
+\centering
+\noindent
+\resheading{\textbf{EDUCATION} }\\[0.3cm]
+\setlength{\tabcolsep}{5pt} % Default value: 6pt
+\addtolength\tabcolsep{18pt}
+\small{\begin{tabularx}
+{\dimexpr\textwidth-2mm\relax}{|l|l|l|l|}
+  \hline
+  Bachelor of Technology & Indian Institute of Technology, Ropar & 8.00 (Till 6th Sem) & 2018-2022\\
+  
+  %\hline
+  %Minor in CSE & Indian Institute of Technology, Ropar & 8.52 %(Till 6th Sem) & 2018-2022\\
+ 
+  \hline
+  Senior Secondary & Central Board of Secondary Education & 95\% & 2018 \\
+  \hline
+  Secondary & Central Board of Secondary Education & 9.8 & 2016 \\
+  \hline
+\end{tabularx}}
+\end{table}
+% \fi
+
+\noindent \resheading{\textbf{INTERNSHIPS}}\\[-0.3cm]
+\begin{itemize}[noitemsep,nolistsep]
+\item \textbf{Thesis title} \\
+\emph{(B.Tech Project | Guide: \textbf{Prof. XYZ})} \hfill \emph{(June'20-Present)}\\
+    % \begin{itemize}[noitemsep,nolistsep]
+ \textbf{Current work:}\\[-0.5cm]
+    \begin{itemize}[noitemsep,nolistsep]
+        \item Description point 1 
+        \item Description point 2
+    \end{itemize}
+\textbf{Future work:}\\[-0.5cm]
+    \begin{itemize}[noitemsep,nolistsep]
+        \item Description point 1
+        \item Description point 2
+    \end{itemize} 
+    % \end{itemize}
+\item \textbf{Seminar Title} \\
+\emph{(M.Tech Seminar | Guide: \textbf{Prof. XYZ})} \hfill \emph{(Jan'20-May'20)}
+    \begin{itemize}[noitemsep,nolistsep]
+    \item Description point 1
+    \item Description point 2
+    \end{itemize}
+
+\end{itemize}
+
+\noindent
+\resheading{\textbf{ACADEMICS PROJECTS} }\\[-0.3cm]
+\begin{itemize}[noitemsep,nolistsep]
+\item \textbf{Project Title 1}, \emph{(CS XXX)}\hfill \emph{(Jan'20-May'20)} 
+\begin{itemize}[noitemsep,nolistsep]
+    \item Description
+\end{itemize}
+
+\item \textbf{Project Title 2}, \emph{(CS XXX)}
+\hfill \emph{(July’19-Nov'19)}
+\begin{itemize}[noitemsep,nolistsep]
+    \item Description
+\end{itemize}
+    
+\item \textbf{Project Title 3}, \emph{(CS XXX)}\hfill \emph{(July’19-Nov'19)} 
+\begin{itemize}[noitemsep,nolistsep]
+    \item Description
+\end{itemize}
+
+\end{itemize}
+
+\noindent
+\resheading{\textbf{ACADEMICS ACHIEVEMENTS AND REWARDS}}\\[-0.3cm]
+\begin{itemize}[noitemsep,nolistsep]
+ \item \textbf{xyz}
+\end{itemize}
+
+\noindent
+\resheading{\textbf{POSITION OF RESPONSIBILITY}}\\[-0.4cm]
+\begin{itemize}
+    \item \textbf{Position held} | \textbf{\emph{Name of university or company}}\hfill \emph{(July’17-Apr'18)}\\[-0.6cm]
+    \begin{itemize}[noitemsep]
+        \item Description
+        \item Description
+        \item Description\\[-0.5cm]
+    \end{itemize}
+    \item \textbf{Position held} | \textbf{\emph{Name of university or company}}\hfill \emph{(July’17-Apr'18)}\\[-0.6cm]
+    \begin{itemize}[noitemsep]
+        \item Description\\[-0.5cm]
+    \end{itemize}
+    \item \textbf{Position held} | \textbf{\emph{Name of university or company}}\hfill \emph{(July’17-Apr'18)}\\[-0.6cm]
+    \begin{itemize}[noitemsep]
+        \item Description\\[-0.5cm]
+    \end{itemize}
+
+\end{itemize}
+
+\noindent
+\resheading{\textbf{EXTRA-CURRICULARS}}\\[-0.4cm]
+\begin{itemize}
+\setlength\itemsep{-0.4em}
+\item \textbf{Teaching Assistant} for the course, \textbf{CSXXX : Course Name}\hfill \emph{(Aug'20-Present)}
+
+\item \textbf{Interview Co-ordinator} at IIT Bombay\hfill \emph{(Dec'19)}
+
+\item \textbf{Teaching Assistant} for the course, \textbf{CSXXX : Course Name}, supervised the labs for the course, evaluated their lab assignments, quizzes and examination papers \hfill \emph{(Aug'19-Dec'19 \& Jan'19-Apr'19)}
+
+ \item \textbf{Teaching Assistant} for the course, \textbf{CSXXX : Course Name}, supervised the labs for the course, evaluated their lab assignments, quizzes and examination papers \hfill \emph{(Aug'19-Dec'19 \& Jan'19-Apr'19)}
+
+\end{itemize}
+
+\noindent
+\resheading{\textbf{TECHNICAL SKILLS}}\\[-0.4cm]
+ \begin{itemize}
+  \item \textbf{Programming \& Scripting Languages}: C, C++, Java, Javascript, Ruby, Python, HTML, CSS\\[-0.6cm]
+  \item \textbf{Tools \& Libraries}: MATLAB, \LaTeX, OpenCV, ReactJS, AngularJS \\[-0.5cm]
+
+  \end{itemize}
+
+\end{document}
